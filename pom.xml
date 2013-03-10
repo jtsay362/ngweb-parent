@@ -2,24 +2,23 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.ngweb</groupId>
   <artifactId>parent</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>0.0.2-SNAPSHOT</version>
   <name>${project.artifactId}</name>
   <description>Parent project for NGWeb projects</description>
   <inceptionYear>2012</inceptionYear>
   <packaging>pom</packaging>
 
   <properties>    
-    <maven.compiler.source>1.6</maven.compiler.source>
-    <maven.compiler.target>1.6</maven.compiler.target>
-    <maven.compiler.version>2.3.2</maven.compiler.version>    
+    <maven.compiler.source>1.7</maven.compiler.source>
+    <maven.compiler.target>1.7</maven.compiler.target>
+    <maven.compiler.version>3.0</maven.compiler.version>    
     <maven.enforcer.version>1.0.1</maven.enforcer.version>                
-    <maven.surefire.version>2.12</maven.surefire.version>          
+    <maven.surefire.version>2.13</maven.surefire.version>          
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <encoding>UTF-8</encoding>
     
-    <aspectj.version>1.6.12</aspectj.version>
-    <autoproxy.lite.version>2.9</autoproxy.lite.version>
-    <bonecp.version>0.7.1.RELEASE</bonecp.version>
+    <aspectj.version>1.7.2</aspectj.version>
+
     <commons.beanutils.version>1.8.3</commons.beanutils.version>
     <commons.codec.version>1.7</commons.codec.version>
     <commons.collections.version>3.2.1</commons.collections.version>
@@ -28,71 +27,48 @@
     <commons.io.version>2.4</commons.io.version>
     <commons.lang.version>2.6</commons.lang.version>
     <commons.pool.version>1.6</commons.pool.version>
-    <compass.version>2.2.0</compass.version>
-    <ehcache.version>2.4.7</ehcache.version>
-    <ehcache.web.version>2.0.3</ehcache.web.version>
     <!--
     <el.version>1.2</el.version>
     -->
-    <facebook.api.version>3.0.2</facebook.api.version>
-    <freemarker.version>2.3.19</freemarker.version>
-    <guava.version>13.0.1</guava.version>
-    <h2.version>1.3.168</h2.version>
+    <guava.version>14.0</guava.version>
+    <h2.version>1.3.170</h2.version>
     <hibernate.version>3.6.10.Final</hibernate.version>
     <hibernate3.maven.plugin.version>2.2</hibernate3.maven.plugin.version>
-    <hibernate.validator.version>4.3.0.Final</hibernate.validator.version>
+    <hibernate.validator.version>4.3.1.Final</hibernate.validator.version>
     <hsqldb.version>2.2.6</hsqldb.version>
 
     <!--
     <hibernate.annotations.version>3.4.0.GA</hibernate.annotations.version>
     -->
-    <httpcomponents.client.version>4.2.1</httpcomponents.client.version>
-    <ibatis.version>2.3.4.726</ibatis.version>     
-    <jackson.version>1.9.9</jackson.version>
-    <jasper.el.version>6.0.35</jasper.el.version>
-    <javamail.version>1.4.1</javamail.version>
+    <httpcomponents.client.version>4.2.3</httpcomponents.client.version>
+
+    <jackson.version>1.9.12</jackson.version>
+    
     <javax.inject.version>1</javax.inject.version>
-    <javassist.version>3.14.0-GA</javassist.version>
-    <jetty.version>8.1.7.v20120910</jetty.version>
-    <!-- Seems to have a long startup time
-     jetty.version>8.0.4.v20111024</jetty.version -->
-    <jetty.maven.plugin.version>${jetty.version}</jetty.maven.plugin.version>
-    <jetty.servlet.version>${jetty.version}</jetty.servlet.version>    
-    <jetty.servlets.version>${jetty.version}</jetty.servlets.version>
+    <javamail.version>1.4.1</javamail.version>
+    <javassist.version>3.17.1-GA</javassist.version>
     <jmock.version>2.5.1</jmock.version>    
-    <jpa.version>1.0</jpa.version>
     <json.lib.version>2.4</json.lib.version>    
     <jsoup.version>1.6.1</jsoup.version>
+    <jpa.version>1.0</jpa.version>    
     <jsp.version>2.1</jsp.version>
-    <jsp.glassfish.version>9.1.02.B04.p0</jsp.glassfish.version>
+    <jsp.glassfish.version>9.1.1.B60.25.p2</jsp.glassfish.version>
     <jstl.version>1.2</jstl.version>
     <junit.version>4.7</junit.version>
-    <lift.json.version>2.4-M4</lift.json.version>
-    <!-- log4j.version>1.2.16</log4j.version -->
-    <logback.version>1.0.3</logback.version>    
-    <mysql.version>5.1.6</mysql.version>
-
-    <openid4java.version>0.9.5</openid4java.version>
-    <spring.security.facebook.version>1.0-SNAPSHOT</spring.security.facebook.version>
-    <owasp.csrfguard.version>3.0.0.503-ALPHA</owasp.csrfguard.version>
-    <postgresql.version>9.1-901.jdbc4</postgresql.version>
-    <restfb.version>1.6.9</restfb.version>
-    <rhino.version>1.7R4</rhino.version>
+    <!-- lift.json.version>2.4-M4</lift.json.version -->
+    <log4j.version>1.2.17</log4j.version>
+    <logback.version>1.0.9</logback.version>    
+    <slf4j.version>1.7.2</slf4j.version>    
     <servlet.api.version>2.5</servlet.api.version>
     <sitemesh.version>2.4.2</sitemesh.version>
-    <slf4j.version>1.6.4</slf4j.version>    
-    <spring.version>3.1.2.RELEASE</spring.version>
-    <spring.security.version>3.1.2.RELEASE</spring.security.version>
+    <spring.version>3.1.4.RELEASE</spring.version>
+    <spring.security.version>3.1.3.RELEASE</spring.security.version>
     <tacosoft.base.version>1.0</tacosoft.base.version>
     <tacosoft.gut.version>1.0</tacosoft.gut.version>    
     <twitter4j.version>2.2.6</twitter4j.version>
-    <urlrewrite.version>3.2.0</urlrewrite.version>
-
-    <!--velocity.version>1.4</velocity.version>
-    <webtest.version>R_1702</webtest.version -->
-    <wiser.version>1.2</wiser.version>          
-    <junit.version>4.10</junit.version>
-    <testng.version>5.14</testng.version>
+    <junit.version>4.11</junit.version>
+    <testng.version>5.14.10</testng.version>
+    <wiser.version>1.2</wiser.version>
   </properties>
 
   <dependencies>
