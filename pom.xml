@@ -64,7 +64,7 @@
     <spring.version>3.1.4.RELEASE</spring.version>
     <spring.security.version>3.2.4.RELEASE</spring.security.version>
     <tacosoft.base.version>1.0</tacosoft.base.version>
-    <tacosoft.gut.version>1.0</tacosoft.gut.version>  
+    <tacosoft.gut.version>1.0.2-SNAPSHOT</tacosoft.gut.version>  
     <twitter4j.version>3.0.3</twitter4j.version>
     <junit.version>4.11</junit.version>
     <testng.version>5.14.10</testng.version>
